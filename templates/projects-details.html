@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+        <!-- page-title -->
+        <section class="page__title p_relative">
+            <div class="bg-layer" style="background-image:url({% static 'sites/assets/images/resource/page-title-bg.jpg' %})"></div>
+            <div class="auto-container">
+                <div class="content__box p_relative">
+                    <ul class="bread__crumb">
+                        <li><a href="index.html">Home </a></li>
+                        <li> <span> -</span>Projects</li>
+                    </ul>
+                    <h1 class="title">Projects </h1>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end-->
+
+        <!-- project__details -->
+        <section class="project__details p_relative">
+            <div class="auto-container">
+                <div class="image">
+                    <figure>
+                        <img src="{% static 'sites/assets/images/resource/project-details.jpg' %}" alt="">
+                    </figure>
+                </div>
+                <div class="pro__info">
+                    <ul>
+                        <li>
+                            <div class="name">
+                                <p>Client :</p>
+                            </div>
+                            <div class="name__two">
+                                <h4>Jone welliam</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="name">
+                                <p>Category :</p>
+                            </div>
+                            <div class="name__two">
+                                <h4>Marketing</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="name">
+                                <p>Date :</p>
+                            </div>
+                            <div class="name__two">
+                                <h4>15 July, 2023</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="data">
+                    <h4>Data Analysis and Business Intelligence</h4>
+                </div>
+                <p>BizGenius is a dynamic and innovative company that specializes in [products/services]. With a commitment to excellence and a customer-centric approach, we strive to deliver unparalleled solutions that meet the unique needs of our clients. Our team of experienced professionals is dedicated to providing top-notch [products/services] that drive business growth and success. We combine industry expertise with cutting-edge technology to deliver transformative results. Whether you're a small startup or a large enterprise, we have the knowledge and resources to help you thrive in today's competitive market. Partner with [Business Name] and experience the difference as we work together to unlock your business's full potential.</p>
+                <div class="data">
+                    <h4>Data Analysis and Business Intelligence</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatuExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id esed ut perspiciatis unde omnis iste natus.</p>
+                <div class="data__list">
+                    <ul>
+                        <li> <i class="icon-05"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li> <i class="icon-05"></i>Mauris non est efficitur, porttitor dolor ut, euismod dui.</li>
+                        <li> <i class="icon-05"></i>Nulla gravida sapien id turpis molestie, nec rhoncus quam accumsan.</li>
+                        <li> <i class="icon-05"></i>Curabitur facilisis purus a ante feugiat cursus.</li>
+                        <li> <i class="icon-05"></i>Suspendisse ut nisi ac lacus facilisis bibendum.</li>
+                    </ul>
+                </div>
+              
+            </div>
+        </section>
+        <!-- project__details end-->
+
+        <!-- project-page -->
+        <div class="project__page p_relative see__pad">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 colsm-12">
+                        <div class="portfolio__block p_relative">
+                            <div class="portfolio__image">
+                                <figure>
+                                    <img src="{% static 'sites/assets/images/resource/portfolio-01.jpg' %}" alt="">
+                                </figure>
+                            </div>
+                            <div class="lower__content p_absolute">
+                                <div class="protfolio__text">
+                                    <div class="text__block">
+                                        <h4>Sustainability</h4>
+                                        <p>Design</p>
+                                    </div>
+                                    <div class="text__block_two">
+                                        <h5>2019</h5>
+                                    </div>
+                                </div>
+                                <div class="protfolio__button">
+                                    <a href="{% url 'projects_details' %}" class="theme-btn theme-btn-one"> Read More<i class="icon-02"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- pricing-page end-->
+        
+        {% endblock content %}

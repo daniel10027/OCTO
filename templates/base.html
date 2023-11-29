@@ -1,0 +1,332 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>OCTOGONE TECHNOLOGIES</title>
+
+<link rel="icon" href="{% static 'sites/assets/images/favicon.svg' %}" type="image/x-icon">
+
+<!-- Stylesheets -->
+
+<link href="{% static 'sites/assets/css/flaticon.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/owl.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/jquery.fancybox.min.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/animate.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/color.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/global.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/swiper.min.css' %}" rel="stylesheet">
+<link href="{% static 'sites/assets/css/responsive.css' %}" rel="stylesheet">
+
+</head>
+
+<!-- page wrapper -->
+<body>
+    <div class="boxed_wrapper">
+
+        <!-- mouse-pointer -->
+        <div class="mouse-pointer" id="mouse-pointer">
+            <div class="icon"><i class="icon-06"></i><i class="icon-05"></i></div>
+        </div>
+        <!-- mouse-pointer end -->
+
+        <!-- preloader -->
+        <div class="loader-wrap">
+            <div class="hendel__preloder">
+                <div class="preloader">
+                    <div class="preloader-ring">OCTOGONE - OCTOGONE</div>    
+                    <div class="preloader-ring">OCTOGONE - OCTOGONE </div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+        <!-- main header -->
+        <header class="main-header header__style__one ">
+            <!-- header-top-one -->
+            <div class="header-top-one">
+                <div class="auto-container">
+                    <div class="top__inner">
+                        <div class="top__hrader__left">
+                            <ul>
+                                <li><span>Addresse :</span>  Abidjan, Cocody Rivera 2</li>
+                                <li>/</li>
+                                <li><span>Email :</span> <a href="mailto:octogone.techs@gmail.com">octogone.techs@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="top__hrader__right">
+                            <ul>
+                                <li><a href="#"><i class="icon-10"></i></a></li>
+                                <li><a href="#"><i class="icon-14"></i></a></li>
+                                <li><a href="#"><i class="icon-01"></i></a></li>
+                                <li><a href="#"><i class="icon-11"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="{% url 'index' %}"><img src="{% static 'sites/assets/images/logo.png' %}" alt=""></a></figure>
+                        </div>
+                        <div class="menu-area clearfix">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix home-menu">
+                                        <li class="dropdown"><a href="{% url 'index' %}">Accueil</a></li>
+                                        <li><a href="{% url 'about' %}">A Propos</a></li>
+                                        <li class=""><a href="{% url 'services' %}">Nos Services</a></li>
+                                        <li class=""><a href="{% url 'projects' %}">Nos Projets</a></li>
+                                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="btn-box">
+
+                            <a href="{% url 'contact' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> Nous Contacter</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="{% url 'index' %}"><img src="{% static 'sites/assets/images/logo.png' %}" alt=""></a></figure>
+                        </div>
+                        <div class="menu-area clearfix">
+                            <nav class="main-menu clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                        </div>
+                        <div class="btn-box">
+                            <a href="{% url 'contact' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> Nous Contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="icon-fa-times"></i></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="{% url 'index' %}"><img src="{% static 'sites/assets/images/logo.png' %}" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                <div class="contact-info">
+                    <h4>Contacts Info</h4>
+                    <ul>
+                        <li>Abidjan Cocody Rivera 2</li>
+                        <li><a href="tel:+2250748733365">+225 074 873 3365</a></li>
+                        <li><a href="mailto:octogone.techs@gmail.com">octogone.techs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Menu -->
+
+        
+        {% block content %}
+            
+        {% endblock content %}
+            
+        
+          
+   
+  
+  
+        <!-- footer-one -->
+        <footer class="main__footer">
+            <div class="footer-top">
+                <div class="auto-container">
+                    <div class="top-inner">
+                        <div class="left__top">
+                            <h3>Rêvez et laissez nous faire le reste</h3>
+                        </div>
+                        <div class="right__top">
+                            <div class="btn-box">
+                                <a href="{% url 'contact' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> Contactez Nous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__one">
+                <div class="footer-widget-section">
+                    <div class="auto-container">
+                        <div class="row clearfix">
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget footer-logo-widget wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                    <figure class="footer-logo">
+                                        <a href="{% url 'index' %}"><img src="{% static 'sites/assets/images/logo.png' %}" alt=""></a>
+                                    </figure>
+                                    <div class="text">
+                                        <p>Nos solutions sont conçues pour s'intégrer de manière transparente à vos systèmes existants, minimisant les perturbations et maximisant la productivité.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="{% url 'about' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> A Propos</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget news-letter-widget ml_80 wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div class="widget-title">
+                                        <h4>Newletter</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>Intégrez-vous à vos systèmes existants, en minimisant les perturbations et en maximisant la productivité.</p>
+                                    </div>
+                                    <div class="subscribe-inner">
+                                        <form action="#"  class="subscribe-form">
+                                            <div class="form-group">
+                                                <input type="email" name="email" placeholder="Votre email *" required="">
+                                                <div class="btn-box">
+                                                    <button class="theme-btn theme-btn-one" type="submit"><i class="icon-02"></i> GO</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget office-widget wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                    <div class="widget-title">
+                                        <h4>Infos  :</h4>
+                                    </div>
+                                    <div class="widget-content">
+                                        <div class="text">
+                                            <p>Abidjan Cocody Rivera 2</p>
+                                        </div>
+                                        <a href="tel:+2250748733365">+225 074 873 3365</a>
+                                        <a href="mailto:octogone.techs@gmail.com">octogone.techs@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column pr-0">
+                                <div class="footer-widget gallery-widget wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                    <div class="widget-title">
+                                        <h4>Gallerie</h4>
+                                    </div>
+                                    <div class="widget_content">
+                                        <ul class="instagram_list clearfix">
+                                            <li>
+                                                <div class="inner__box">
+                                                    <div class="image__box">
+                                                        <a class="lightbox-image" data-fancybox="gallery" href="{% static 'sites/assets/images/resource/gallery-01.png' %}"><img src="{% static 'sites/assets/images/resource/gallery-01.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner__box">
+                                                    <div class="image__box">
+                                                        <a class="lightbox-image" data-fancybox="gallery" href="{% static 'sites/assets/images/resource/gallery-02.png' %}"><img src="{% static 'sites/assets/images/resource/gallery-02.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner__box">
+                                                    <div class="image__box">
+                                                        <a class="lightbox-image" data-fancybox="gallery" href="{% static 'sites/assets/images/resource/gallery-03.png' %}"><img src="{% static 'sites/assets/images/resource/gallery-03.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner__box">
+                                                    <div class="image__box">
+                                                        <a class="lightbox-image" data-fancybox="gallery" href="{% static 'sites/assets/images/resource/gallery-04.png' %}"><img src="{% static 'sites/assets/images/resource/gallery-04.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner__box">
+                                                    <div class="image__box">
+                                                        <a class="lightbox-image" data-fancybox="gallery" href="{% static 'sites/assets/images/resource/gallery-05.png' %}"><img src="{% static 'sites/assets/images/resource/gallery-05.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner__box">
+                                                    <div class="image__box">
+                                                        <a class="lightbox-image" data-fancybox="gallery" href="{% static 'sites/assets/images/resource/gallery-06.png' %}"><img src="{% static 'sites/assets/images/resource/gallery-06.png' %}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="auto-container">
+                        <div class="bottom-inner">
+                            <div class="copyright">
+                                <p>© 2023 <a href="{% url 'index' %}">OCTOGONE.</a>  All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-one end -->
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+            <div>
+                <div class="scroll-top-inner">
+                    <div class="scroll-bar">
+                        <div class="bar-inner"></div>
+                    </div>
+                    <div class="scroll-bar-text g_color">Remonter</div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to top end -->
+
+
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="{% static 'sites/assets/js/jquery.js' %}"></script>
+    <script src="{% static 'sites/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'sites/assets/js/owl.js' %}"></script>
+    <script src="{% static 'sites/assets/js/wow.js' %}"></script>
+    <script src="{% static 'sites/assets/js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'sites/assets/js/appear.js' %}"></script>
+    <script src="{% static 'sites/assets/js/scrollbar.js' %}"></script>
+    <script src="{% static 'sites/assets/js/swiper.min.js' %}"></script>
+    <script src="{% static 'sites/assets/js/parallax-scroll.js' %}"></script>
+
+
+    <!-- main-js -->
+    <script src="{% static 'sites/assets/js/script.js' %}"></script>
+
+</body><!-- End of .page_wrapper -->
+
+</html>

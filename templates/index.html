@@ -1,0 +1,486 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+
+        <!-- banner-one -->
+        <section class="banner__one ">
+            <div class="pattern-layer">
+                <div class="banner__icon pattern-1 p_absolute" data-parallax='{"x": 100}' style="background-image: url({% static 'sites/assets/images/banner/banner-shap-01.png' %});"></div>
+            </div>
+            <div class="banner__data p_relative">
+                <div class="banner__bg" style="background-image: url({% static 'sites/assets/images/banner/banner-bg.png' %});"></div>
+                <div class="auto-container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="banner__left">
+                                <div class="sub__title">
+                                    <h4>OCTOGONE TECHNOLOGIES</h4>
+                                </div>
+                                <div class="banner__title">
+                                    <h1>Avancer avec <span>La Technologie</span> </h1>
+                                </div>
+                                <div class="text">
+                                    <p>Fournir des conseils IT,du  Developpement Informatique, une assistance à la magration de SI, Architecture Informatique , la protection de la propriété intellectuelle et tout autre services IT. </p>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="{% url 'contact' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> Contactez Nous</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4 col-md-12 ">
+                            <div class="banner__right p_relative">
+                                <div class="image__one">
+                                    <figure class="image-box wow slideInUp animated animated animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible;">
+                                        <img src="{% static 'sites/assets/images/banner/banner-01.png' %}" alt="">
+                                    </figure>
+                                </div>
+                                <div class="icon__image__banner">
+                                    <div class="circle-main">
+                                        <div class="circle">
+                                            <img src="{% static 'sites/assets/images/resource/02.png' %}" alt="">
+                                            <div class="round-text">
+                                                <div class="text_1">
+                                                    <p class="text_2"> ***** OCTOGONE ***** TECHNOLOGIES</p>
+                                                </div>
+                                            </div>                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner-one end -->
+
+        <!-- service -->
+        <section class="service__section p_relative">
+            <div class="auto-container">
+                <div class="service__data">
+                    <div class="title__data">
+                        <div class="sub__title">
+                            <h4>Un Meilleur futur</h4>
+                        </div>
+                        <div class="title">
+                            <h2>Découvrez nos services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for service in services  %}
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="service__block">
+                                <div class="service__icon">
+                                    <i class="icon-04"></i>
+                                    <div class="service__icon__two"></div>
+                                </div>
+                                <div class="service__text">
+                                    <h4><a href="{% url 'services_details' %}">{{service.titre | capfirst}}</a></h4>
+                                    <p>{{service.description | safe }}</p>
+                                </div>
+                                <div class="service__button">
+                                    <a href="{% url 'services_details' %}"><i class="icon-05"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service-end -->
+
+        <!-- about -->
+        <section class="about__section p_relative see__pad">
+            <div class="pattern-layer">
+                <div class="pattern-2 p_absolute" data-parallax='{"x": -50}' style="background-image: url({% static 'sites/assets/images/shapes/shape-02.png' %});"></div>
+            </div>
+            <div class="boild__text">
+                <h1>OCTOGONE</h1>
+            </div>
+            <div class="auto-container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about__block p_relative">
+                            <figure class="wow zoomIn animated" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                <img src="{% static 'sites/assets/images/resource/about-us.png' %}" alt="">
+                            </figure>
+                            <div class="funfact__content about" style="background-image: url({% static 'sites/assets/images/shapes/shape-01.png' %});">
+                                <div class="count-outer count-box">
+                                    <h1 class="count-text" data-speed="300" data-stop="23">0</h1>
+                                    <span>+</span>
+                                </div>
+                                <p>World wide Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="about__text__block">
+                            <div class="sub__title">
+                                <h4>À PROPOS DE L'ENTREPRISE</h4>
+                            </div>
+                            <div class="title two">
+                                <h2>Améliorer les expériences du monde réel avec la  <span>Technologie</span>.</h2>
+                            </div>
+                            <div class="texts">
+                                <p>Les applications de la RA sont vastes et diverses. Du divertissement et des jeux, où les utilisateurs peuvent voir des personnages virtuels dans leur environnement, à l'éducation, où des sujets complexes peuvent être visualisés et expliqués de manière immersive.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="{% url 'about' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> Voir Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-end -->
+
+        <!-- choose -->
+        <section class="choose__us p_relative">
+            <div class="choose__us__data">
+                <div class="auto-container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="choose__block">
+                                <figure>
+                                    <img src="{% static 'sites/assets/images/resource/choose-01.png' %}" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="choose__block__right">
+                                <div class="title__data">
+                                    <div class="sub__title">
+                                        <h4>Pourquoi nous choisir</h4>
+                                    </div>
+                                    <div class="title">
+                                        <h2>Nous fournissons les meilleurs services </h2>
+                                    </div>
+                                </div>
+                                <div class="team__data">
+                                    <div class="team__data__left">
+                                        <img src="{% static 'sites/assets/images/resource/choose-02.svg' %}" alt="">
+                                    </div>
+                                    <div class="team__data__right">
+                                        <h3>Équipe d'experts :</h3>
+                                        <p>Notre équipe dédiée de professionnels de la technologie comprend des ingénieurs, des développeurs et des chercheurs expérimentés passionnés par le fait de repousser les limites de la technologie.</p>
+                                    </div>
+                                </div>
+                                <div class="team__data">
+                                    <div class="team__data__left">
+                                        <img src="{% static 'sites/assets/images/resource/choose-02.svg' %}" alt="">
+                                    </div>
+                                    <div class="team__data__right">
+                                        <h3>Équipe Multidisciplinaire :</h3>
+                                        <p>En plus de notre équipe dédiée de professionnels de la technologie, nous nous appuyons sur une équipe multidisciplinaire de spécialistes comprenant des experts en sécurité informatique, des architectes de systèmes, des analystes de données et des spécialistes en gestion de projets. </p>
+                                    </div>
+                                </div>
+                                <div class="team__data three">
+                                    <div class="team__data__left">
+                                        <img src="{% static 'sites/assets/images/resource/choose-02.svg' %}" alt="">
+                                    </div>
+                                    <div class="team__data__right">
+                                        <h3>Approche Axée sur l'Innovation :</h3>
+                                        <p>Nous nous distinguons par notre approche axée sur l'innovation. Notre équipe dédiée, constituée d'esprits créatifs et novateurs, est constamment à l'affût des dernières tendances technologiques. Nous mettons un point d'honneur à intégrer les solutions les plus avant-gardistes dans nos services IT.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- choose-end -->
+
+        <!-- team-section -->
+        <section class="team__section see__pad p_relative">
+            <div class="pattern-layer">
+                <div class="pattern-3 p_absolute" data-parallax='{"y": 50}' style="background-image: url({% static 'sites/assets/images/shapes/shape-03.png' %});"></div>
+            </div>
+            <div class="auto-container">
+                <div class="title__data">
+                    <div class="sub__title">
+                        <h4>MEMBRES DE L'ÉQUIPE</h4>
+                    </div>
+                    <div class="title">
+                        <h2>Nous avons un membre expert</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    
+                   
+                   {% for team in teams  %}
+                   <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="team__block wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="team__img">
+                            <figure>
+                                <img src="{{team.photo.url}}" alt="">
+                            </figure>
+                        </div>
+                        <div class="team__name">
+                            <h3>{{team.nom | capfirst }}</h3>
+                        </div>
+                        <div class="team__media">
+                            <ul>
+                                <li><a href="#">FB.</a></li>
+                                <li><a href="#">TW.</a></li>
+                                <li><a href="#">LI</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                   {% endfor %}
+                    
+
+                </div>
+            </div>
+            <div class="accomplised__section">
+                <div class="auto-container">
+                    <div class="accomplised__data p_relative">
+                        <div class="pattern-layer">
+                            <div class="pattern-4 p_absolute" data-parallax='{"x": 100}' style="background-image: url({% static 'sites/assets/images/shapes/shape-04.png' %});"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="title__data">
+                                    <div class="sub__title">
+                                        <h4>CE QUE NOUS AVONS RÉALISE</h4>
+                                    </div>
+                                    <div class="title">
+                                        <h2>Nous sommes fiers de<br> notre excellent support <br> et service</h2>
+                                    </div>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="{% url 'contact' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> Contactez Nous</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="funfact__data">
+                                    <div class="funfact__content one">
+                                        <div class="count-outer count-box">
+                                            <span>+</span>
+                                            <h1 class="count-text" data-speed="1500" data-stop="4.9">0</h1>
+                                            <span class="two">*</span>
+                                        </div>
+                                        <p> Satisfaction client</p>
+                                    </div>
+                                    <div class="funfact__content two">
+                                        <div class="count-outer count-box">
+                                            <span>+</span>
+                                            <h1 class="count-text" data-speed="1500" data-stop="47">0</h1>
+                                            <span class="two"></span>
+                                        </div>
+                                        <p>Services actifs</p>
+                                    </div>
+                                    <div class="funfact__content three">
+                                        <div class="count-outer count-box">
+                                            <span>+</span>
+                                            <h1 class="count-text" data-speed="1500" data-stop="30">0</h1>
+                                            <span class="two">%</span>
+                                        </div>
+                                        <p>Résolution le jour même</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- team-section-end -->
+
+        <!-- testimonial-section -->
+        <section class="testimonial__section p_relative">
+            <div class="auto-container">
+                <div class="testimonial__top">
+                    <div class="title__data">
+                        <div class="sub__title">
+                            <h4>TÉMOIGNAGES </h4>
+                        </div>
+                        <div class="title">
+                            <h2>Ce que disent nos clients</h2>
+                        </div>
+                    </div>
+                    <div class="swiper__button">
+                        <div class="button_next"><i class="icon-06"></i></div>
+                        <div class="button_prev"><i class="icon-05"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container two-item-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonials__block__one">
+                        <div class="test__bg"></div>
+                        <div class="testimonials__info">
+                            <div class="authore__img">
+                                <figure class="image">
+                                    <img src="{% static 'sites/assets/images/resource/author-01.png' %}" alt="">
+                                </figure>
+                            </div>
+                            <div class="authore__rating">
+                                <ul>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                </ul>
+                            </div>
+                            <div class="authore__info">
+                                <h5>Wade Warren</h5>
+                                <p>Manager</p>
+                            </div>
+                            <div class="testimonials__text">
+                                <p>Our technologies are designed to seamlessly integrate with your existing systems, minimizing disruption and maximizing productivity.</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <span class="icon-03"></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonials__block__one">
+                        <div class="test__bg"></div>
+                        <div class="testimonials__info">
+                            <div class="authore__img">
+                                <figure class="image">
+                                    <img src="{% static 'sites/assets/images/resource/author-02.png' %}" alt="">
+                                </figure>
+                            </div>
+                            <div class="authore__rating">
+                                <ul>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                </ul>
+                            </div>
+                            <div class="authore__info">
+                                <h5>Robert Fox</h5>
+                                <p>Technology</p>
+                            </div>
+                            <div class="testimonials__text">
+                                <p>Our technologies are designed to seamlessly integrate with your existing systems, minimizing disruption and maximizing productivity.</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <span class="icon-03"></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonials__block__one">
+                        <div class="test__bg"></div>
+                        <div class="testimonials__info">
+                            <div class="authore__img">
+                                <figure class="image">
+                                    <img src="{% static 'sites/assets/images/resource/author-03.png' %}" alt="">
+                                </figure>
+                            </div>
+                            <div class="authore__rating">
+                                <ul>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                </ul>
+                            </div>
+                            <div class="authore__info">
+                                <h5>Eleanor Pena</h5>
+                                <p>CTO</p>
+                            </div>
+                            <div class="testimonials__text">
+                                <p>Our technologies are designed to seamlessly integrate with your existing systems, minimizing disruption and maximizing productivity.</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <span class="icon-03"></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonials__block__one">
+                        <div class="test__bg"></div>
+                        <div class="testimonials__info">
+                            <div class="authore__img">
+                                <figure class="image">
+                                    <img src="{% static 'sites/assets/images/resource/author-04.png' %}" alt="">
+                                </figure>
+                            </div>
+                            <div class="authore__rating">
+                                <ul>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                    <li><i class="icon-13"></i></li>
+                                </ul>
+                            </div>
+                            <div class="authore__info">
+                                <h5>JGuy Hawkins</h5>
+                                <p>Ex CTO</p>
+                            </div>
+                            <div class="testimonials__text">
+                                <p>Our technologies are designed to seamlessly integrate with your existing systems, minimizing disruption and maximizing productivity.</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <span class="icon-03"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-section-end -->
+
+        <!-- brand-section -->
+        <div class="brand__section p_relative see__pad">
+            <div class="pattern-layer">
+                <div class="pattern-3 p_absolute" data-parallax='{"y": -50}' style="background-image: url({% static 'sites/assets/images/shapes/shape-05.png' %});"></div>
+            </div>
+            <div class="brand-carousel owl-carousel owl-theme  nav-style-one owl-loaded owl-drag">
+                <div class="brand__content">
+                    <div class="brand__name">
+                        <h1>IT Services *</h1>
+                    </div>
+                </div>
+                <div class="brand__content">
+                    <div class="brand__name">
+                        <h1>Development *</h1>
+                    </div>
+                </div>
+                <div class="brand__content">
+                    <div class="brand__name">
+                        <h1>Technology *</h1>
+                    </div>
+                </div>
+                <div class="brand__content">
+                    <div class="brand__name">
+                        <h1>IT Services *</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand-section-end -->
+
+       
+    <script 
+    type="text/javascript"
+    src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+    id="aisensy-wa-widget"
+    widget-id="RXF4em"
+  >
+  </script>
+  
+    
+{% endblock content %}
+    
+     

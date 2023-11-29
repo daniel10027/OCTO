@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+        <!-- page-title -->
+        <section class="page__title p_relative">
+            <div class="bg-layer" style="background-image:url({% static 'sites/assets/images/resource/page-title-bg.jpg' %})"></div>
+            <div class="auto-container">
+                <div class="content__box p_relative">
+                    <ul class="bread__crumb">
+                        <li><a href="{% url 'index' %}">Accueil </a></li>
+                        <li> <span> - </span>Nos Projects </li>
+                    </ul>
+                    <h1 class="title">Nos Projects</h1>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end-->
+
+        <!-- project-page -->
+        <div class="project__page p_relative see__pad">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 colsm-12">
+                    <div class="portfolio__block p_relative">
+                        <div class="portfolio__image">
+                            <figure>
+                                <img src="{% static 'sites/assets/images/resource/portfolio-01.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                        <div class="lower__content p_absolute">
+                            <div class="protfolio__text">
+                                <div class="text__block">
+                                    <h4>Sustainability</h4>
+                                    <p>Design</p>
+                                </div>
+                                <div class="text__block_two">
+                                    <h5>2019</h5>
+                                </div>
+                            </div>
+                            <div class="protfolio__button">
+                                <a href="{% url 'projects_details' %}" class="theme-btn theme-btn-one"> Read More<i class="icon-02"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- pricing-page end-->
+
+        {% endblock content %}

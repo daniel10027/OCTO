@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+        <!-- page-title -->
+        <section class="page__title p_relative">
+            <div class="bg-layer" style="background-image:url({% static 'sites/assets/images/resource/page-title-bg.jpg' %})"></div>
+            <div class="auto-container">
+                <div class="content__box p_relative">
+                    <ul class="bread__crumb">
+                        <li><a href="index.html">Home </a></li>
+                        <li> <span> -</span>Services Details </li>
+                    </ul>
+                    <h1 class="title">Services Details</h1>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end-->
+
+        <!-- service-page end-->
+        <div class="service__details p_relative ">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-12">
+                        <div class="service__details__left">
+                            <div class="sidebar__widget">
+                                <div class="all__service">
+                                    <h4>All Services</h4>
+                                </div>
+                                <ul class="service__details__1__cat">
+                                    <li><a href="digital-marketing.html">Digital Marketing <i class="icon-02"></i></a></li>
+                                    <li><a href="ui-ux-design.html">UX/ UI Design <i class="icon-02"></i></a></li>
+                                    <li class="active"><a href="seo-marketing.html">SEO Marketing <i class="icon-02"></i></a></li>
+                                    <li><a href="graphic-design.html">Graphic Design <i class="icon-02"></i></a></li>                                
+                                    <li><a href="development.html">Home Buying <i class="icon-02"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class=" sidebar__widget_network" style="background-image: url({% static 'sites/assets/images/resource/base.png' %});">                            
+                                <h3>Contact Us For Any Require</h3>
+                                <div class="services__icon">
+                                    <i class="icon-19"></i>
+                                </div>
+                                <p>Need help?  Call us:</p>
+                                <h4>(+800) 1234 5678 90</h4>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-12 col-md-12">
+                        <div class="service__right">
+                            <figure>
+                                <img src="assets/images/resource/service-details.jpg" alt="">
+                            </figure>
+                            <h2>Enhancing Real-world Experiences with AR <span>Technology.</span> </h2>
+                            <p>The applications of AR are vast and diverse. From entertainment and gaming, where users can see virtual characters in their surroundings, to education, where complex subjects can be visualized and explained in an immersive way,. We understand that every business has unique needs. Our technology solutions are tailored to match your specific requirements, ensuring optimal performance and efficiency. Our dedicated team of technology professionals comprises experienced engineers, developers, and researchers who are passionate about pushing the boundaries of technology. We understand that every business has unique needs. Our technology solutions are tailored to match your specific requirements, ensuring optimal performance and efficiency.</p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <li> <a href="#"><i class="icon-04"></i> Human Resources</a></li>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <li> <a href="#"><i class="icon-04"></i> Web Development</a></li>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <li> <a href="#"><i class="icon-04"></i> Content Writing </a></li>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <li> <a href="#"><i class="icon-04"></i> IT Support</a></li>
+                                </div>
+                            </div>
+                            <p>
+                                The applications of AR are vast and diverse. From entertainment and gaming, where users can see virtual characters in their surroundings, to education, where complex subjects can be visualized and explained in an immersive way,. We understand that every business has unique needs. Our technology solutions are tailored to match your specific requirements, ensuring optimal performance and efficiency. 
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page-title end-->
+
+        <!-- service-contact -->
+        <div class="service__contact see__pad p_relative">
+            <div class="auto-container">
+                <div class="service__contact__block">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="service__form__data">
+                                <div class="form__title">
+                                    <div class="title__data">
+                                        <div class="sub__title">
+                                            <h4>Contact Us</h4>
+                                        </div>
+                                        <div class="title">
+                                            <h2>Send message</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-inner">
+                                    <form method="post" action="http://test.valorwide.com/datamatrix/contact.php" class="default-form"> 
+                                        <div class="row clearfix">
+                                            <div class="col-xl-6 form-group">
+                                                <input type="name" name="name" placeholder="Your Name *" required="">
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 form-group">
+                                                <input type="email" name="email" placeholder="Your Email *" required="">
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 form-group">
+                                                <input type="text" name="subject" placeholder="Your Subject " required="">
+                                            </div>
+                                            <div class="col-xl-6 col-lg-12 form-group">
+                                                <input type="text" name="phone" placeholder="Your Phone " required="">
+                                            </div>
+                                            <div class="ccol-xl-6 col-lg-12 form-group">
+                                                <textarea name="message" placeholder="Message"></textarea>
+                                            </div>
+                                            <div class="col-xl-12 form-group message-btn btn-box">
+                                                <button class="theme-btn theme-btn-one" type="submit" name="submit-form">Send your Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="service__contact__img">
+                                <figure>
+                                    <img src="assets/images/resource/man.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- service-contact-end -->
+        
+        {% endblock content %}

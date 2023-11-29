@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+        <!-- page-title -->
+        <section class="page__title p_relative">
+            <div class="bg-layer" style="background-image:url({% static 'sites/assets/images/resource/page-title-bg.jpg' %})"></div>
+            <div class="auto-container">
+                <div class="content__box p_relative">
+                    <ul class="bread__crumb">
+                        <li><a href="index.html">Home </a></li>
+                        <li> <span> -</span>Pricing </li>
+                    </ul>
+                    <h1 class="title">Pricing</h1>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end-->
+
+        <!-- pricing-page -->
+        <div class="pricing__page p_relative see__pad">
+            <div class="auto-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="price__content p_relative">
+                            <div class="price__data">
+                                <h5>Basic</h5>
+                                <h4><span>$</span>200 / <span>m</span></h4>
+                            </div>
+                            <div class="price__block">
+                                <div class="price__list">
+                                    <ul>
+                                        <li>20GB Space</li>
+                                        <li>10GB Bandwidth</li>
+                                        <li>2 Databases </li>
+                                        <li>1 Accounts</li>
+                                        <li>24th Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price__icon">
+                                <i class="icon-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="price__content p_relative">
+                            <div class="price__data">
+                                <h5>Personal</h5>
+                                <h4><span>$</span>300 / <span>m</span></h4>
+                            </div>
+                            <div class="price__block">
+                                <div class="price__list">
+                                    <ul>
+                                        <li>20GB Space</li>
+                                        <li>10GB Bandwidth</li>
+                                        <li>2 Databases </li>
+                                        <li>1 Accounts</li>
+                                        <li>24th Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price__icon">
+                                <i class="icon-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="price__content p_relative">
+                            <div class="price__data">
+                                <h5>Business</h5>
+                                <h4><span>$</span>500 / <span>m</span></h4>
+                            </div>
+                            <div class="price__block">
+                                <div class="price__list">
+                                    <ul>
+                                        <li>20GB Space</li>
+                                        <li>10GB Bandwidth</li>
+                                        <li>2 Databases </li>
+                                        <li>1 Accounts</li>
+                                        <li>24th Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price__icon">
+                                <i class="icon-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pricing-page end-->
+
+        {% endblock content %}

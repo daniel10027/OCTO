@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+
+        <!-- page-title -->
+        <section class="page__title p_relative">
+            <div class="bg-layer" style="background-image:url({% static 'sites/assets/images/resource/page-title-bg.jpg' %})"></div>
+            <div class="auto-container">
+                <div class="content__box p_relative">
+                    <ul class="bread__crumb">
+                        <li><a href="{% url 'index' %}">Accueil </a></li>
+                        <li> <span> -</span>A Propos </li>
+                    </ul>
+                    <h1 class="title">A Propos</h1>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end-->
+
+        <!-- about -->
+        <section class="about__section about__page p_relative see__pad">
+            <div class="pattern-layer">
+                <div class="pattern-2 p_absolute" data-parallax='{"x": -50}' style="background-image: url({% static 'sites/assets/images/shapes/shape-02.png' %});"></div>
+            </div>
+            <div class="boild__text">
+                <h1>OCTOGONE</h1>
+            </div>
+            <div class="auto-container">
+                <div class="row">
+                   
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-11 col-md-12">
+                        <div class="about__text__block">
+                            <div class="sub__title">
+                                <h4>À propos de l'entreprise</h4>
+                            </div>
+                            <div class="title two">
+                                <h2>Améliorer les expériences du monde réel avec la <span>Technologiek</span>.</h2>
+                            </div>
+                            <div class="texts">
+                                <p>
+                                    Fondée en août 2019, OCTOGONE TECHNOLOGIE s'impose comme un acteur de premier plan dans le domaine des solutions IT, du développement logiciel, de la maintenance informatique, de la fourniture de matériel et de la vidéo surveillance. 
+                                    <br>Dirigée par Monsieur Guedegbe Jean Marie en tant que Directeur Général, notre entreprise incarne l'engagement envers l'excellence technologique et l'innovation.
+<br>
+<br>
+Notre Vision
+<br>
+<br>Chez OCTOGONE TECHNOLOGIE, nous croyons en la puissance transformante de la technologie. Notre vision consiste à offrir des solutions IT de pointe qui transcendent les attentes, répondent aux défis complexes et propulsent nos clients vers une ère de réussite digitale.
+
+<br>
+<br>
+Un Éventail Complet de Services
+<br>
+<br>
+Que ce soit le développement sur mesure de logiciels, la maintenance proactive de systèmes informatiques, la fourniture de matériel de qualité supérieure, ou la mise en place de systèmes de vidéo surveillance avancés, 
+OCTOGONE TECHNOLOGIE offre un éventail complet de services pour répondre aux besoins variés de nos clients.
+<br>
+<br>
+Leadership Éclairé
+<br>
+<br>
+Sous la direction éclairée de son Directeur Général, OCTOGONE TECHNOLOGIE s'engage à rester à la pointe de l'industrie. 
+Notre équipe dédiée, composée d'experts passionnés, travaille sans relâche pour repousser les frontières de la technologie et fournir des solutions qui façonnent
+ l'avenir numérique.
+ <br>
+ <br>
+Explorez notre site pour découvrir comment OCTOGONE TECHNOLOGIE peut être votre partenaire privilégié pour toutes vos initiatives IT. Bien plus qu'une entreprise, nous sommes vos collaborateurs dans la construction d'un avenir technologique exceptionnel.
+<br>
+<br>
+N'hésitez pas à ajuster le texte selon les spécificités de votre entreprise et les détails que vous souhaitez mettre en avant.
+                                </p>
+                            </div>
+                            <div class="btn-box">
+                                <a href="{% url 'contact' %}" class="theme-btn theme-btn-one"><i class="icon-02"></i> Contactez Nous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-end -->
+
+        <!-- choose -->
+        <section class="choose__us p_relative">
+            <div class="choose__us__data">
+                <div class="auto-container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="choose__block">
+                                <figure>
+                                    <img src="{% static 'sites/assets/images/resource/choose-01.png' %}" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="choose__block__right">
+                                <div class="title__data">
+                                    <div class="sub__title">
+                                        <h4>Pourquoi nous choisir</h4>
+                                    </div>
+                                    <div class="title">
+                                        <h2>Nous fournissons les meilleurs services </h2>
+                                    </div>
+                                </div>
+                                <div class="team__data">
+                                    <div class="team__data__left">
+                                        <img src="{% static 'sites/assets/images/resource/choose-02.svg' %}" alt="">
+                                    </div>
+                                    <div class="team__data__right">
+                                        <h3>Équipe d'experts :</h3>
+                                        <p>Notre équipe dédiée de professionnels de la technologie comprend des ingénieurs, des développeurs et des chercheurs expérimentés passionnés par le fait de repousser les limites de la technologie.</p>
+                                    </div>
+                                </div>
+                                <div class="team__data">
+                                    <div class="team__data__left">
+                                        <img src="{% static 'sites/assets/images/resource/choose-02.svg' %}" alt="">
+                                    </div>
+                                    <div class="team__data__right">
+                                        <h3>Équipe Multidisciplinaire :</h3>
+                                        <p>En plus de notre équipe dédiée de professionnels de la technologie, nous nous appuyons sur une équipe multidisciplinaire de spécialistes comprenant des experts en sécurité informatique, des architectes de systèmes, des analystes de données et des spécialistes en gestion de projets. </p>
+                                    </div>
+                                </div>
+                                <div class="team__data three">
+                                    <div class="team__data__left">
+                                        <img src="{% static 'sites/assets/images/resource/choose-02.svg' %}" alt="">
+                                    </div>
+                                    <div class="team__data__right">
+                                        <h3>Approche Axée sur l'Innovation :</h3>
+                                        <p>Nous nous distinguons par notre approche axée sur l'innovation. Notre équipe dédiée, constituée d'esprits créatifs et novateurs, est constamment à l'affût des dernières tendances technologiques. Nous mettons un point d'honneur à intégrer les solutions les plus avant-gardistes dans nos services IT.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- choose-end -->
+
+
+        <!-- pride-section -->
+        <div class="pride__section p_relative see__pad">
+            <div class="pride__layer" style="background-image:url({% static 'sites/assets/images/resource/bg-04.jpg' %})"></div>
+            <div class="auto-container">
+                <div class="pride__block">
+                    <figure>
+                        <img src="{% static 'sites/assets/images/resource/icon-04.png' %}" alt="">
+                    </figure>
+                    <h1>Avec OCTOGONE TECHNOLOGIE, rêvez et laissez nous faire le reste
+                       </h1>
+                </div>
+            </div>
+        </div>
+        <!-- pride-section-end -->
+
+        {% comment %} <!-- pricing-section -->
+        <section class="pricing__section see__pad p_relative">
+            <div class="pattern-layer">
+                <div class="pattern-4 p_absolute" data-parallax='{"x": 100}' style="background-image: url({% static 'sites/assets/images/shapes/shape-04.png' %});"></div>
+            </div>  
+            <div class="auto-container">
+                <div class="title__data">
+                    <div class="sub__title">
+                        <h4>Pricing</h4>
+                    </div>
+                    <div class="title">
+                        <h2>Product Price</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="price__content p_relative">
+                            <div class="price__data">
+                                <h5>Basic</h5>
+                                <h4><span>$</span>200 / <span>m</span></h4>
+                            </div>
+                            <div class="price__block">
+                                <div class="price__list">
+                                    <ul>
+                                        <li>20GB Space</li>
+                                        <li>10GB Bandwidth</li>
+                                        <li>2 Databases </li>
+                                        <li>1 Accounts</li>
+                                        <li>24th Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price__icon">
+                                <i class="icon-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="price__content p_relative">
+                            <div class="price__data">
+                                <h5>Personal</h5>
+                                <h4><span>$</span>300 / <span>m</span></h4>
+                            </div>
+                            <div class="price__block">
+                                <div class="price__list">
+                                    <ul>
+                                        <li>20GB Space</li>
+                                        <li>10GB Bandwidth</li>
+                                        <li>2 Databases </li>
+                                        <li>1 Accounts</li>
+                                        <li>24th Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price__icon">
+                                <i class="icon-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="price__content p_relative">
+                            <div class="price__data">
+                                <h5>Business</h5>
+                                <h4><span>$</span>500 / <span>m</span></h4>
+                            </div>
+                            <div class="price__block">
+                                <div class="price__list">
+                                    <ul>
+                                        <li>20GB Space</li>
+                                        <li>10GB Bandwidth</li>
+                                        <li>2 Databases </li>
+                                        <li>1 Accounts</li>
+                                        <li>24th Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price__icon">
+                                <i class="icon-16"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-section-end --> {% endcomment %}
+        
+        {% endblock content %}
